@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: rgb(89, 90, 84);
+}
+
+.wrapper {
+  background-color: rgb(163, 241, 241);
+  width: 1400px;
+  margin: 50px auto;
+  position: relative;
+  padding: 50px;
+}
+
+.mountain {
+  width: 100%;
+}
+
+.start {
+  background-color: green;
+  height: 60px;
+  z-index: 1;
+}
+
+.sun {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  background-color: yellow;
+  box-shadow: 1px 1px 30px 10px orange;
+}
+
+.score-border {
+  padding: 20px 0px 30px 0px;
+  background-color: blueviolet;
+}
+
+.score {
+  margin: 20px auto;
+  width: 350px;
+  height: 100px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: rgb(177, 136, 84);
+}
+
+.instruction {
+  font-size: 20px;
+  padding: 0px 0px 0px 50px;
+}
+
+.clode-1 {
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  width: 200px;
+  height: 100px;
+  border-radius: 14% 86% 40% 60% / 23% 54% 46% 77%;
+  background-color: aliceblue;
+}
+
+.clode-2 {
+  position: absolute;
+  top: 80px;
+  left: 700px;
+  width: 200px;
+  height: 100px;
+  border-radius: 15% 85% 6% 94% / 24% 62% 38% 76%;
+  background-color: aliceblue;
+  opacity: 0.7;
+}
+
+.clode-3 {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  width: 200px;
+  height: 100px;
+  border-radius: 15% 85% 6% 54% / 24% 62% 38% 46%;
+  background-color: aliceblue;
+  opacity: 0.7;
+}
+
+
+.interval {
+  width: 25px;
+  height: 1px;
+  border-top: solid rgb(216, 118, 118);
+}
+
+.interval-1 {
+  position: absolute;
+  top: 350px;
+  left: 240px;
+}
+
+.interval-2 {
+  position: absolute;
+  top: 280px;
+  left: 300px;
+}
+
+.interval-3 {
+  position: absolute;
+  top: 230px;
+  left: 340px;
+}
+
+.interval-4 {
+  position: absolute;
+  top: 185px;
+  left: 390px;
+}
+
+.interval-5 {
+  position: absolute;
+  top: 190px;
+  left: 480px;
+}
+
+.interval-6 {
+  position: absolute;
+  top: 150px;
+  left: 570px;
+}
+
+.interval-7 {
+  position: absolute;
+  top: 80px;
+  left: 640px;
+}
+
+.interval-8 {
+  position: absolute;
+  top: 100px;
+  left: 690px;
+}
+
+.interval-9 {
+  position: absolute;
+  top: 170px;
+  left: 760px;
+}
+
+.interval-10 {
+  position: absolute;
+  top: 240px;
+  left: 860px;
+}
+
+.interval-11 {
+  position: absolute;
+  top: 200px;
+  left: 990px;
+}
+
+.interval-12 {
+  position: absolute;
+  top: 130px;
+  left: 1030px;
+}
+
+.interval-13 {
+  position: absolute;
+  top: 60px;
+  left: 1080px;
+}
+
+.climber {
+  position: absolute;
+  width: 60px;
+  top: 350px;
+  left: 220px;
+  max-width: 100%;
+}
+
+.win-flag {
+  position: absolute;
+  visibility: hidden;
+  width: 40px;
+  height: 50px;
+  top: 15px;
+  left: 1060px;
+}
+
+
+.stone-1 {
+  position: absolute;
+  animation: mymove 3s;
+  animation-iteration-count: 2;
+  left: 400px;
+  width: 30px;
+  height: 30px;
+  border-radius: 71% 29% 98% 2% / 8% 55% 45% 92%;
+  background-color: rgb(27, 26, 26);
+}
+@keyframes mymove {
+  from {top: 200px;}
+  to {top: 400px;}
+}
+
+.stone-2 {
+  position: absolute;
+  animation: move2 4s;
+  animation-iteration-count: 2;
+  left: 600px;
+  width: 30px;
+  height: 30px;
+  border-radius: 71% 29% 98% 22% / 18% 100% 0% 92%;
+  background-color: rgb(63, 61, 61);
+}
+@keyframes move2 {
+  from {top: 100px;}
+  to {top: 400px;}
+}
+
+.stone-3 {
+  position: absolute;
+  animation: move3 5s;
+  animation-iteration-count: 6;
+  left: 700px;
+  width: 20px;
+  height: 20px;
+  border-radius: 71% 29% 98% 22% / 18% 100% 0% 92%;
+  background-color: rgb(63, 61, 61);
+}
+@keyframes move3 {
+  from {top: 100px;}
+  to {top: 400px;}
+}
+
+.stone-4 {
+  position: absolute;
+  animation: move4 3s;
+  animation-iteration-count: 6;
+  left: 800px;
+  width: 10px;
+  height: 10px;
+  border-radius: 71% 29% 98% 22% / 18% 100% 0% 92%;
+  background-color: rgb(63, 61, 61);
+}
+@keyframes move4 {
+  from {top: 170px;}
+  to {top: 400px;}
+}
+
+.stone-5 {
+  position: absolute;
+  animation: move5 4s;
+  animation-iteration-count: 6;
+  left: 900px;
+  width: 30px;
+  height: 10px;
+  border-radius: 71% 29% 98% 22% / 18% 100% 0% 92%;
+  background-color: rgb(63, 61, 61);
+}
+@keyframes move5 {
+  from {top: 230px;}
+  to {top: 400px;}
+}
+
+
+
